@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="classes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pedometer/bin/classes/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pedometer/bin/classes/achartengine-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

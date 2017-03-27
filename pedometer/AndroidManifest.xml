@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="edu.hui.pedometer"
+      android:versionCode="5" android:versionName="1.4.0"
+      android:installLocation="auto">
+      
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <permission
+          android:name="edu.hui.pedometer.permission.MAPS_RECEIVE"
+          android:protectionLevel="signature"/>
+    <uses-permission android:name="name.bagi.levente.pedometer.permission.MAPS_RECEIVE"/>
+    <uses-feature 
+  			android:glEsVersion="0x00020000" 
+ 			 android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="edu.hui.pedometer.tools.ExtendAppication">
+      
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+    		android:value="AIzaSyDCHJCOZtXuU6oaaFmBjW3a84h0OCFxUis"/>
+        
+        <activity android:name="edu.hui.pedometer.Pedometer"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.hui.pedometer.Settings"
+                android:label="@string/activity_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="edu.hui.pedometer.StepService"/>
+        <activity android:name="recordList">
+        </activity>
+        <activity android:name="startMapActivity"></activity>
+
+    </application>
+
+</manifest> 

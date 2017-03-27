@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pedometer/bin/dexedLibs/google-play-services_lib-9add1fd109793724912cd55c5457fff2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pedometer/bin/dexedLibs/achartengine-1.0.0-0cde4069dd0ccf9a2f25422ce87abcbb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pedometer/bin/dexedLibs/annotations-719262ff269595f3fbb7aa95beb38016.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pedometer/bin/dexedLibs/android-support-v4-0a69eac0042d8c47bbb2ecae30a290a1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pedometer/bin/dexedLibs/google-play-services-0bece0d8dbc14cf4451b1c4431f7f15e.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
